@@ -1,12 +1,15 @@
+api = "0.10"
+
 [buildpack]
 id = "neeto-deploy/sqlite"
-version = "0.1.0"
+version = "1.0.0"
 name = "NeetoDeploy SQLite Buildpack"
 description = "A Cloud Native Buildpack that installs sqlite3 for use in Rails and Node.js apps."
 
 [metadata]
 homepage = "https://github.com/bigbinary/neeto-deploy-sqlite-buildpack"
 authors = ["NeetoDeploy Team <support@neeto.com>"]
+include-files = ["bin/build", "bin/detect", "bin/release", "buildpack.toml"]
 
 [[stacks]]
 id = "*"
